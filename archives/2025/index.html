@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>2025 | Altria的秘密</title><meta name="author" content="Altria"><meta name="copyright" content="Altria"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="2025">
+<meta property="og:url" content="http://example.com/archives/2025/index.html">
+<meta property="og:site_name" content="Altria的秘密">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/saber-icon.JPG">
+<meta property="article:author" content="Altria">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/saber-icon.JPG"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/archives/2025/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '2025',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'archive'
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Altria的秘密" type="application/atom+xml">
+<style>.lazyload-outer-wrap .caption{
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .lazyload-outer-wrap{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .lazyload-wrap {
+    position: relative;
+    display: block;
+    border-radius: 0.1em;
+  }
+  .lazyload-wrap .placeholder {
+    width: 100%;
+    height: 0;
+    display: block;
+    padding-bottom: 66.66667%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://i.loli.wiki/public/240207/loading.svg);
+  }
+  .lazyload-wrap .placeholder canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .lazyload-wrap .inner-wrap video, .lazyload-wrap .inner-wrap iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  .lazyload-wrap .inner-wrap, .lazyload-wrap .error-wrap{
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    will-change: opacity;
+    border-radius: inherit;
+  }
+  .lazyload-wrap .gallery-item{
+    border-radius: inherit;
+  }
+  .lazyload-wrap .inner-wrap.loaded{
+    opacity: 1;
+  }
+  .lazyload-wrap img{
+    object-fit: contain;
+    display: block;
+    margin: 0 auto !important;
+    height: 100% !important;
+    border-radius: inherit;
+  }
+  .lazyload-wrap .placeholder.loaded {
+    background-image: none !important;
+    background-color: unset !important;
+  }
+  .lazyload-wrap.loaded .inner-wrap {
+    opacity: 1;
+  }
+  .lazyload-wrap .error-wrap{
+    background-color: #f5f5f5;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lazyload-wrap .error-wrap .error-tip{
+    width: 60%;
+    background-size: cover;
+    background-image: url(https://i.loli.wiki/public/240201/error-tip.svg);
+  }
+  .lazyload-wrap .error-wrap .error-tip::before{
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 26.79640719%;
+  }
+  .lazyload-wrap .error-wrap .retry-btn{
+    margin-top: 2em;
+    background-image: linear-gradient(#f7f8fa ,#e7e9ec);
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    box-shadow: rgba(255,255,255,.6) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #0f1111;
+    display: inline-block;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 14px;
+    height: 29px;
+    font-size: 13px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 11px;
+    text-align: center;
+  }</style>
+  <script>
+  var $lazyload = {
+    intersectionRatio: 0.25
+ }
+ </script>
+  <link rel="preload" as="image" href="https://i.loli.wiki/public/240207/loading.svg" /><link rel="preload" as="image" href="https://i.loli.wiki/public/240201/error-tip.svg" /></head><body><noscript><style>.lazyload-wrap {display: none;}</style></noscript><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Altria的秘密</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div></div></nav><h1 class="title-seo">2025</h1></header><main class="layout" id="content-inner"><div id="archive"><div class="article-sort-title">全部文章 - 1</div><div class="article-sort"><div class="article-sort-item year">2025</div><div class="article-sort-item"><a class="article-sort-item-img" href="/2025/06/28/%E6%97%A5%E6%9C%AC%E8%A1%8C/" title="日本行"><img src="/2025/06/28/%E6%97%A5%E6%9C%AC%E8%A1%8C/DSC01060.jpg" alt="日本行" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2025-06-28T11:43:12.000Z" title="发表于 2025-06-28 19:43:12">2025-06-28</time></div><a class="article-sort-item-title" href="/2025/06/28/%E6%97%A5%E6%9C%AC%E8%A1%8C/" title="日本行">日本行</a></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/saber-icon.JPG" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Altria</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/06/28/%E6%97%A5%E6%9C%AC%E8%A1%8C/" title="日本行"><img src="/2025/06/28/%E6%97%A5%E6%9C%AC%E8%A1%8C/DSC01060.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日本行"/></a><div class="content"><a class="title" href="/2025/06/28/%E6%97%A5%E6%9C%AC%E8%A1%8C/" title="日本行">日本行</a><time datetime="2025-06-28T11:43:12.000Z" title="发表于 2025-06-28 19:43:12">2025-06-28</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Japan/" style="font-size: 1.1em; color: #999">Japan</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/06/">
+            <span class="card-archive-list-date">
+              六月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-06-28T17:21:13.794Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2025 By Altria</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div><script>(()=>{function S(e){return~~(1227e-8<e?q*H(e,.416666)-13.025:e*U+1)}function T(e){for(e+=M/2;M<e;)e-=n;var t=1.27323954*e-.405284735*O(e);return.225*(O(t)-t)+t}var a="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz#$%*+,-.:;=?@[]^_{|}~",x=function(e,t,n){for(var r=0;t<n;)r=(r*=83)+a.indexOf(e[t++]);return r},H=Math.pow,M=Math.PI,n=2*M,U=3294.6,q=269.025,O=function(e){return(e<0?-1:1)*e*e};function e(e,t,n,r){for(var a,o,d,i,c,l,s,u,p=x(e,0,1),h=p%9+1,f=1+~~(p/9),v=h*f,m=0,w=0,g=0,C=0,y=0,b=0,I=0,L=(x(e,1,2)+1)/13446*(1|r),D=new Float64Array(3*v),E=[(p=x(p=e,2,6))>>16,p>>8&255,255&p],m=0;m<3;m++)D[m]=10.31475<(u=E[m])?H(u/q+.052132,2.4):u/U;for(m=1;m<v;m++)s=x(e,4+2*m,6+2*m),D[3*m]=O(~~(s/361)-9)*L,D[3*m+1]=O(~~(s/19)%19-9)*L,D[3*m+2]=O(s%19-9)*L;for(var A=4*t,R=new Uint8ClampedArray(A*n),C=0;C<n;C++)for(c=M*C/n,g=0;g<t;g++){for(l=M*g/t,w=I=b=y=0;w<f;w++)for(o=T(c*w),m=0;m<h;m++)a=T(l*m)*o,y+=D[d=3*(m+w*h)]*a,b+=D[1+d]*a,I+=D[2+d]*a;R[i=4*g+C*A]=S(y),R[1+i]=S(b),R[2+i]=S(I),R[3+i]=255}return R}"undefined"!=typeof window&&(window.blurhash={decodeBlurHash:e})})(),(()=>{if("undefined"!=typeof window){var d=function(e){var t=document.createElement("div");return t.innerHTML=e,t.classList.add("inner-wrap"),t},e=function(e){var t,n,r=document.createElement("div"),a=decodeURIComponent(e.dataset.content).replace("<img","<div"),a=(r.innerHTML=a,r.children[0]),r=(e=>{var t={};if(!e)return"";try{var n=/\$placeholder=(\S+)=placeholder/gi.exec(e);n&&n[1]&&(t.placeholderImage=n[1])}catch(e){console.log(e)}return t})(a.getAttribute("alt")),a=a.dataset.placeholderimg||r.placeholderImage;a&&/blurhash:/.test(a)&&(r=document.createElement("canvas"),a=blurhash.decodeBlurHash(a.replace("blurhash:",""),32,32),t=r.getContext("2d"),r.width=32,r.height=32,(n=t.createImageData(32,32)).data.set(a),t.putImageData(n,0,0),a=r,e.children[0].appendChild(a)),e.dataset.content=e.dataset.content.replace(/%24placeholder%3D(\S+)%3Dplaceholder/gi,"").replace(/%24aspect-ratio%3D(\S+)%3Daspect-ratio/gi,"")},r=function(n){function r(e){n.classList.remove("loaded"),e.preventDefault(),e.stopPropagation(),(e=n.querySelectorAll(".error-wrap")[0])&&n.removeChild(e),e=n.children[1],n.removeChild(e),e=d(t),a(e),o(e),n.appendChild(e)}var t=decodeURIComponent(n.dataset.content),e=d(t),a=function(e){e.children[0].onload=function(){setTimeout(function(){n.classList.add("loaded")},100);var e=n.querySelectorAll(".error-wrap")[0];e&&n.removeChild(e)},e.ontransitionend=function(){n.children[0].classList.add("loaded")},/<video/.test(t)&&setTimeout(function(){n.classList.add("loaded")},100)},o=function(e){e.children[0].onerror=function(){var e=document.createElement("div"),t=(e.classList.add("error-wrap"),document.createElement("span")),t=(t.classList.add("error-tip"),e.appendChild(t),document.createElement("button"));t.innerText="Retry",t.classList.add("retry-btn"),t.onclick=r,e.appendChild(t),n.appendChild(e)}};a(e),o(e),n.appendChild(e)},t=document.querySelectorAll(".lazyload-wrap");if(window.IntersectionObserver)for(var n,a,o=0;o<t.length;o++)e(c=t[o]),(t=>{var n=new IntersectionObserver(function(e){e.forEach(function(e){e.intersectionRatio>=window.$lazyload.intersectionRatio&&(r(t),n.disconnect())})},{root:document,threshold:[0,.2,.4,.6,.8,1]});n.observe(t)})(c);else for(var i=0;i<t.length;i++){var c=t[i];n=c,a=void 0,a=decodeURIComponent(n.dataset.content),n.appendChild(d(a))}}})();</script></body></html>
